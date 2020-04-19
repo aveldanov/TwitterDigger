@@ -17,6 +17,8 @@
 		214AD2B7244BEA79007A7732 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 214AD2B6244BEA79007A7732 /* README.md */; };
 		214AD2CB244BEC2B007A7732 /* SwifteriOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 214AD2C1244BEBCE007A7732 /* SwifteriOS.framework */; };
 		214AD2CC244BEC2B007A7732 /* SwifteriOS.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 214AD2C1244BEBCE007A7732 /* SwifteriOS.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		214AD2CF244BF23A007A7732 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 214AD2CE244BF23A007A7732 /* .gitignore */; };
+		214AD2D1244BF24E007A7732 /* Keys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 214AD2D0244BF24E007A7732 /* Keys.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,6 +85,8 @@
 		214AD2B4244BE88E007A7732 /* TwitterDiggerClassification.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = TwitterDiggerClassification.mlmodel; sourceTree = "<group>"; };
 		214AD2B6244BEA79007A7732 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		214AD2B8244BEBCD007A7732 /* Swifter.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Swifter.xcodeproj; path = ../CreateML/TwitterDiggerData/swifter/Swifter/Swifter.xcodeproj; sourceTree = "<group>"; };
+		214AD2CE244BF23A007A7732 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		214AD2D0244BF24E007A7732 /* Keys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Keys.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +104,7 @@
 		214AD294244AC5FB007A7732 = {
 			isa = PBXGroup;
 			children = (
+				214AD2CE244BF23A007A7732 /* .gitignore */,
 				214AD2B8244BEBCD007A7732 /* Swifter.xcodeproj */,
 				214AD2B6244BEA79007A7732 /* README.md */,
 				214AD29F244AC5FB007A7732 /* TwitterDigger */,
@@ -127,6 +132,7 @@
 				214AD2AB244AC5FD007A7732 /* LaunchScreen.storyboard */,
 				214AD2B4244BE88E007A7732 /* TwitterDiggerClassification.mlmodel */,
 				214AD2AE244AC5FD007A7732 /* Info.plist */,
+				214AD2D0244BF24E007A7732 /* Keys.swift */,
 			);
 			path = TwitterDigger;
 			sourceTree = "<group>";
@@ -253,6 +259,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				214AD2CF244BF23A007A7732 /* .gitignore in Resources */,
 				214AD2AD244AC5FD007A7732 /* LaunchScreen.storyboard in Resources */,
 				214AD2AA244AC5FD007A7732 /* Assets.xcassets in Resources */,
 				214AD2B7244BEA79007A7732 /* README.md in Resources */,
@@ -271,6 +278,7 @@
 				214AD2A5244AC5FB007A7732 /* ViewController.swift in Sources */,
 				214AD2A1244AC5FB007A7732 /* AppDelegate.swift in Sources */,
 				214AD2A3244AC5FB007A7732 /* SceneDelegate.swift in Sources */,
+				214AD2D1244BF24E007A7732 /* Keys.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
