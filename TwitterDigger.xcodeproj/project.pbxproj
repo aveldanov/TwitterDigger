@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -21,6 +21,7 @@
 		214AD2D3244BF3E9007A7732 /* Keys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 214AD2D2244BF3E9007A7732 /* Keys.swift */; };
 		214AD2D5244BF8DD007A7732 /* Secrets.plist in Resources */ = {isa = PBXBuildFile; fileRef = 214AD2D4244BF8DD007A7732 /* Secrets.plist */; };
 		214AD2D7244C06B5007A7732 /* TwitterDiggerClassificationAirline.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 214AD2D6244C06B5007A7732 /* TwitterDiggerClassificationAirline.mlmodel */; };
+		21F114D2244C215D00E46A53 /* TweetSentimentClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 21F114CC244C215D00E46A53 /* TweetSentimentClassifier.mlmodel */; };
 		94C977964A95FA1129030A2B /* Pods_TwitterDigger.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35FE4D948B556A1FD8494E87 /* Pods_TwitterDigger.framework */; };
 /* End PBXBuildFile section */
 
@@ -92,6 +93,7 @@
 		214AD2D2244BF3E9007A7732 /* Keys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Keys.swift; sourceTree = "<group>"; };
 		214AD2D4244BF8DD007A7732 /* Secrets.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Secrets.plist; sourceTree = "<group>"; };
 		214AD2D6244C06B5007A7732 /* TwitterDiggerClassificationAirline.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = TwitterDiggerClassificationAirline.mlmodel; path = ../../CreateML/TwitterDiggerData/TwitterDiggerClassificationAirline.mlmodel; sourceTree = "<group>"; };
+		21F114CC244C215D00E46A53 /* TweetSentimentClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = TweetSentimentClassifier.mlmodel; path = ../../../../../Downloads/TweetSentimentClassifier.mlmodel; sourceTree = "<group>"; };
 		35FE4D948B556A1FD8494E87 /* Pods_TwitterDigger.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TwitterDigger.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C9A2B3B672B19176494FAC0 /* Pods-TwitterDigger.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TwitterDigger.release.xcconfig"; path = "Target Support Files/Pods-TwitterDigger/Pods-TwitterDigger.release.xcconfig"; sourceTree = "<group>"; };
 		D231E5D1F426EAF1413A42AC /* Pods-TwitterDigger.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TwitterDigger.debug.xcconfig"; path = "Target Support Files/Pods-TwitterDigger/Pods-TwitterDigger.debug.xcconfig"; sourceTree = "<group>"; };
@@ -142,6 +144,7 @@
 				214AD2AB244AC5FD007A7732 /* LaunchScreen.storyboard */,
 				214AD2B4244BE88E007A7732 /* TwitterDiggerClassification.mlmodel */,
 				214AD2D6244C06B5007A7732 /* TwitterDiggerClassificationAirline.mlmodel */,
+				21F114CC244C215D00E46A53 /* TweetSentimentClassifier.mlmodel */,
 				214AD2AE244AC5FD007A7732 /* Info.plist */,
 				214AD2D2244BF3E9007A7732 /* Keys.swift */,
 				214AD2D4244BF8DD007A7732 /* Secrets.plist */,
@@ -175,7 +178,6 @@
 				D231E5D1F426EAF1413A42AC /* Pods-TwitterDigger.debug.xcconfig */,
 				8C9A2B3B672B19176494FAC0 /* Pods-TwitterDigger.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -345,6 +347,7 @@
 				214AD2B5244BE88E007A7732 /* TwitterDiggerClassification.mlmodel in Sources */,
 				214AD2A5244AC5FB007A7732 /* ViewController.swift in Sources */,
 				214AD2A1244AC5FB007A7732 /* AppDelegate.swift in Sources */,
+				21F114D2244C215D00E46A53 /* TweetSentimentClassifier.mlmodel in Sources */,
 				214AD2D7244C06B5007A7732 /* TwitterDiggerClassificationAirline.mlmodel in Sources */,
 				214AD2A3244AC5FB007A7732 /* SceneDelegate.swift in Sources */,
 				214AD2D3244BF3E9007A7732 /* Keys.swift in Sources */,

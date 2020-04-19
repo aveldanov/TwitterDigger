@@ -27,7 +27,7 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wZv-ZX-qIU" userLabel="TextField">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wZv-ZX-qIU" userLabel="TextField">
                                                 <rect key="frame" x="0.0" y="453.5" width="414" height="120"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="120" id="2Zt-oK-5Nq"/>

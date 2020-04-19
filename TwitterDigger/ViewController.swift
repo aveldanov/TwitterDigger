@@ -15,7 +15,7 @@ class ViewController: UIViewController {
   
   let keys = Keys()
   
-  let sentimentClassifier = TwitterDiggerClassification()
+  let sentimentClassifier = TweetSentimentClassifier()
   
   @IBOutlet weak var backgroundView: UIView!
   @IBOutlet weak var textField: UITextField!
@@ -31,60 +31,6 @@ class ViewController: UIViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
     
-    swifter.searchTweet(using: "#blessed", lang: "en", count: 100, tweetMode: .extended, success: { (results, metadata) in
-      //      print(results)
-      
-      var tweets = [TwitterDiggerClassificationInput]()
-      for i in 0..<100{
-        if let tweet = results[i]["full_text"].string{
-          
-          //           print(tweet)
-          let tweetForClassification = TwitterDiggerClassificationInput(text: tweet)
-          tweets.append(tweetForClassification)
-          
-        }
-        
-      }
-      
-      // print(tweets)
-      do{
-        
-       let predicatons = try self.sentimentClassifier.predictions(inputs: tweets)
-       
-        var sentimentScore = 0
-        
-        for pred in predicatons{
-          let sentiment = pred.class_
-          
-          if sentiment == "Pos"{
-            sentimentScore += 1
-          }else if sentiment == "Neg"{
-            sentimentScore -= 1
-          }
-          
-        }
-        
-//        predicatons.map{print($0.class_)}
-        
-        print(sentimentScore)
-      }catch{
-        print(error)
-      }
-      
-      
-      
-    }) { (error) in
-      print("Error with Twitter API request \(error)")
-    }
-    
-    
-    
-    
-    
-    //    // check 1 tweet
-    //    let predication = try! sentimentClassifier.prediction(text: "@Apple America love it best ever favorite")
-    //
-    //    print(predication.class_)
     
   }
   
@@ -92,6 +38,101 @@ class ViewController: UIViewController {
   
   
   @IBAction func predictPressed(_ sender: UIButton) {
+    
+    
+    if let searchText = textField.text{
+      
+      swifter.searchTweet(using: searchText, lang: "en", count: 100, tweetMode: .extended, success: { (results, metadata) in
+        //      print(results)
+        
+        var tweets = [TweetSentimentClassifierInput]()
+        for i in 0..<100{
+          if let tweet = results[i]["full_text"].string{
+            
+            //           print(tweet)
+            let tweetForClassification = TweetSentimentClassifierInput(text: tweet)
+            tweets.append(tweetForClassification)
+            
+          }
+          
+        }
+        
+        // print(tweets)
+        do{
+          
+          let predicatons = try self.sentimentClassifier.predictions(inputs: tweets)
+          
+          var sentimentScore = 0
+          
+          for pred in predicatons{
+            let sentiment = pred.label
+            
+            if sentiment == "Pos"{
+              sentimentScore += 1
+            }else if sentiment == "Neg"{
+              sentimentScore -= 1
+            }
+            
+          }
+          
+          //        predicatons.map{print($0.label)}
+          
+          print(sentimentScore)
+          
+          if sentimentScore > 20 {
+            self.sentimentLabel.text = "😍"
+          }
+          else if sentimentScore > 10 {
+            self.sentimentLabel.text = "😀"
+          }
+          else if sentimentScore > 10 {
+            self.sentimentLabel.text = "🙂"
+          }
+          else if sentimentScore == 0 {
+            self.sentimentLabel.text = "😐"
+          }
+          else if sentimentScore > -10 {
+            self.sentimentLabel.text = "🙁"
+          }
+          else if sentimentScore > -20 {
+            self.sentimentLabel.text = "😠"
+          }else{
+            self.sentimentLabel.text = "😡"
+          }
+          
+          
+          
+          
+        }catch{
+          print(error)
+        }
+        
+        
+        
+      }) { (error) in
+        print("Error with Twitter API request \(error)")
+      }
+      
+      
+      
+      
+      
+      //    // check 1 tweet
+      //    let predication = try! sentimentClassifier.prediction(text: "@Apple America love it best ever favorite")
+      //
+      //    print(predication.class_)
+      
+      
+      
+      
+    }
+    
+    
+    
+    
+    
+    
+    
   }
   
   
