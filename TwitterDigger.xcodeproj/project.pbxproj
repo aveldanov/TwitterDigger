@@ -13,6 +13,7 @@
 		214AD2A8244AC5FB007A7732 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 214AD2A6244AC5FB007A7732 /* Main.storyboard */; };
 		214AD2AA244AC5FD007A7732 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 214AD2A9244AC5FD007A7732 /* Assets.xcassets */; };
 		214AD2AD244AC5FD007A7732 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 214AD2AB244AC5FD007A7732 /* LaunchScreen.storyboard */; };
+		214AD2B5244BE88E007A7732 /* TwitterDiggerClassification.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 214AD2B4244BE88E007A7732 /* TwitterDiggerClassification.mlmodel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		214AD2A9244AC5FD007A7732 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		214AD2AC244AC5FD007A7732 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		214AD2AE244AC5FD007A7732 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		214AD2B4244BE88E007A7732 /* TwitterDiggerClassification.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = TwitterDiggerClassification.mlmodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 				214AD2A6244AC5FB007A7732 /* Main.storyboard */,
 				214AD2A9244AC5FD007A7732 /* Assets.xcassets */,
 				214AD2AB244AC5FD007A7732 /* LaunchScreen.storyboard */,
+				214AD2B4244BE88E007A7732 /* TwitterDiggerClassification.mlmodel */,
 				214AD2AE244AC5FD007A7732 /* Info.plist */,
 			);
 			path = TwitterDigger;
@@ -138,6 +141,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				214AD2B5244BE88E007A7732 /* TwitterDiggerClassification.mlmodel in Sources */,
 				214AD2A5244AC5FB007A7732 /* ViewController.swift in Sources */,
 				214AD2A1244AC5FB007A7732 /* AppDelegate.swift in Sources */,
 				214AD2A3244AC5FB007A7732 /* SceneDelegate.swift in Sources */,
