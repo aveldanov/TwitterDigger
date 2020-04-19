@@ -122,30 +122,7 @@ class ViewController: UIViewController {
       
       //        predicatons.map{print($0.label)}
       
-      print(sentimentScore)
-      
-      if sentimentScore > 20 {
-        self.sentimentLabel.text = "😍"
-      }
-      else if sentimentScore > 10 {
-        self.sentimentLabel.text = "😀"
-      }
-      else if sentimentScore > 10 {
-        self.sentimentLabel.text = "🙂"
-      }
-      else if sentimentScore == 0 {
-        self.sentimentLabel.text = "😐"
-      }
-      else if sentimentScore > -10 {
-        self.sentimentLabel.text = "🙁"
-      }
-      else if sentimentScore > -20 {
-        self.sentimentLabel.text = "😠"
-      }else{
-        self.sentimentLabel.text = "😡"
-      }
-      
-      
+      updateUI(with: sentimentScore)
       
       
     }catch{
@@ -155,7 +132,30 @@ class ViewController: UIViewController {
   }
   
   
-  func updateUI(){
+  func updateUI(with sentimentScore: Int ){
+    
+    print(sentimentScore)
+    
+    if sentimentScore > 20 {
+      self.sentimentLabel.text = "😍"
+    }
+    else if sentimentScore > 10 {
+      self.sentimentLabel.text = "😀"
+    }
+    else if sentimentScore > 10 {
+      self.sentimentLabel.text = "🙂"
+    }
+    else if sentimentScore == 0 {
+      self.sentimentLabel.text = "😐"
+    }
+    else if sentimentScore > -10 {
+      self.sentimentLabel.text = "🙁"
+    }
+    else if sentimentScore > -20 {
+      self.sentimentLabel.text = "😠"
+    }else{
+      self.sentimentLabel.text = "😡"
+    }
     
     
     
