@@ -9,6 +9,7 @@
 import UIKit
 import SwifteriOS
 import CoreML
+import SwiftyJSON
 
 class ViewController: UIViewController {
 
@@ -31,13 +32,32 @@ class ViewController: UIViewController {
     super.viewDidLoad()
     
     swifter.searchTweet(using: "@Apple", lang: "en", count: 100, tweetMode: .extended, success: { (results, metadata) in
-      print(results)
+//      print(results)
+      
+      var tweets = [String]()
+      for i in 0..<100{
+        if let tweet = results[i]["full_text"].string{
+           
+//           print(tweet)
+          tweets.append(tweet)
+           
+         }
+        
+      }
+      
+// print(tweets)
+      
+      
+      
+      
     }) { (error) in
       print("Error with Twitter API request \(error)")
     }
     
     
-    try! sentimentClassifier.prediction(text: "@Apple is terrible")
+    let predication = try! sentimentClassifier.prediction(text: "@Apple America love it best ever favorite")
+    
+    print(predication.class_)
 
   }
 
