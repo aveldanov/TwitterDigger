@@ -104,7 +104,6 @@
 		214AD294244AC5FB007A7732 = {
 			isa = PBXGroup;
 			children = (
-				214AD2CE244BF23A007A7732 /* .gitignore */,
 				214AD2B8244BEBCD007A7732 /* Swifter.xcodeproj */,
 				214AD2B6244BEA79007A7732 /* README.md */,
 				214AD29F244AC5FB007A7732 /* TwitterDigger */,
@@ -124,6 +123,7 @@
 		214AD29F244AC5FB007A7732 /* TwitterDigger */ = {
 			isa = PBXGroup;
 			children = (
+				214AD2CE244BF23A007A7732 /* .gitignore */,
 				214AD2A0244AC5FB007A7732 /* AppDelegate.swift */,
 				214AD2A2244AC5FB007A7732 /* SceneDelegate.swift */,
 				214AD2A4244AC5FB007A7732 /* ViewController.swift */,
