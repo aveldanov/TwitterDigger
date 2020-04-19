@@ -8,10 +8,13 @@
 
 import UIKit
 import SwifteriOS
+import CoreML
 
 class ViewController: UIViewController {
 
   let keys = Keys()
+  
+  let sentimentClassifier = TwitterDiggerClassification()
   
   @IBOutlet weak var backgroundView: UIView!
   @IBOutlet weak var textField: UITextField!
@@ -33,9 +36,9 @@ class ViewController: UIViewController {
       print("Error with Twitter API request \(error)")
     }
     
+    
+    try! sentimentClassifier.prediction(text: "@Apple is terrible")
 
-    // Reference to all parameters
-//    swifter.searchTweet(using: <#T##String#>, geocode: <#T##String?#>, lang: <#T##String?#>, locale: <#T##String?#>, resultType: <#T##String?#>, count: <#T##Int?#>, until: <#T##String?#>, sinceID: <#T##String?#>, maxID: <#T##String?#>, includeEntities: <#T##Bool?#>, callback: <#T##String?#>, tweetMode: <#T##TweetMode#>, success: <#T##Swifter.SearchResultHandler?##Swifter.SearchResultHandler?##(JSON, JSON) -> Void#>, failure: <#T##Swifter.FailureHandler##Swifter.FailureHandler##(Error) -> Void#>)
   }
 
   
