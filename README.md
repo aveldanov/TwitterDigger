@@ -14,7 +14,7 @@ import Cocoa
 import CreateML
 
 
-
+```
 let data = try MLDataTable(contentsOf: URL(fileURLWithPath: "/Users/aveldanov/Downloads/twitter-sanders-apple3.csv"))
 
 
@@ -40,3 +40,5 @@ try sentimentClassifier.write(to: URL(fileURLWithPath: "/Users/aveldanov/Downloa
 try sentimentClassifier.prediction(from: "@Apple is lovely, great and wonderful")
 
 try sentimentClassifier.prediction(from: "I hate this restaraunt. Horrible food")
+
+```
