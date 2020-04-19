@@ -11,17 +11,27 @@ import SwifteriOS
 
 class ViewController: UIViewController {
 
+  let keys = Keys()
   
   @IBOutlet weak var backgroundView: UIView!
   @IBOutlet weak var textField: UITextField!
   @IBOutlet weak var sentimentLabel: UILabel!
   
-  let swifter = Swifter(consumerKey: TWITTER_CONSUMER_KEY, consumerSecret: TWITTER_CONSUMER_SECRET)
+
+  var swifter: Swifter{
+    return Swifter(consumerKey: keys.APIkey, consumerSecret: keys.APISecretKey)
+  }
+
 
   
   override func viewDidLoad() {
     super.viewDidLoad()
-    // Do any additional setup after loading the view.
+    
+    swifter.searchTweet(using: "@Apple", success: { (results, metadata) in
+      print(results)
+    }) { (error) in
+      print("Error with Twitter API request \(error)")
+    }
   }
 
 

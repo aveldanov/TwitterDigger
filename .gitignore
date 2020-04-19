@@ -2,6 +2,7 @@
 ## Ignore keys
 
 TwitterDigger/Keys.swift
-
+TwitterDigger/Secrets.plist
 
 Keys.swift
+Secrets.plist

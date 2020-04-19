@@ -19,6 +19,7 @@
 		214AD2CC244BEC2B007A7732 /* SwifteriOS.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 214AD2C1244BEBCE007A7732 /* SwifteriOS.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		214AD2CF244BF23A007A7732 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 214AD2CE244BF23A007A7732 /* .gitignore */; };
 		214AD2D3244BF3E9007A7732 /* Keys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 214AD2D2244BF3E9007A7732 /* Keys.swift */; };
+		214AD2D5244BF8DD007A7732 /* Secrets.plist in Resources */ = {isa = PBXBuildFile; fileRef = 214AD2D4244BF8DD007A7732 /* Secrets.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -87,6 +88,7 @@
 		214AD2B8244BEBCD007A7732 /* Swifter.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Swifter.xcodeproj; path = ../CreateML/TwitterDiggerData/swifter/Swifter/Swifter.xcodeproj; sourceTree = "<group>"; };
 		214AD2CE244BF23A007A7732 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		214AD2D2244BF3E9007A7732 /* Keys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Keys.swift; sourceTree = "<group>"; };
+		214AD2D4244BF8DD007A7732 /* Secrets.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Secrets.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +135,7 @@
 				214AD2B4244BE88E007A7732 /* TwitterDiggerClassification.mlmodel */,
 				214AD2AE244AC5FD007A7732 /* Info.plist */,
 				214AD2D2244BF3E9007A7732 /* Keys.swift */,
+				214AD2D4244BF8DD007A7732 /* Secrets.plist */,
 			);
 			path = TwitterDigger;
 			sourceTree = "<group>";
@@ -263,6 +266,7 @@
 				214AD2AD244AC5FD007A7732 /* LaunchScreen.storyboard in Resources */,
 				214AD2AA244AC5FD007A7732 /* Assets.xcassets in Resources */,
 				214AD2B7244BEA79007A7732 /* README.md in Resources */,
+				214AD2D5244BF8DD007A7732 /* Secrets.plist in Resources */,
 				214AD2A8244AC5FB007A7732 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
