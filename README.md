@@ -1,11 +1,11 @@
 ## PODs
 
-Swifter
-SwiftyJSON
+* Swifter
+* SwiftyJSON
 
 ## Tech
-CreateML
-CoreML
+* CreateML
+* CoreML
 
 
 ### How to create a Model using CreateML in MacOS Playground
