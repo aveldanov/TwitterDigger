@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SwifteriOS
 
 class ViewController: UIViewController {
 
