@@ -22,13 +22,13 @@
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="😐" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jbF-KX-Brt">
-                                                <rect key="frame" x="0.0" y="0.0" width="414" height="453.5"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="100"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="528.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="140"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wZv-ZX-qIU" userLabel="TextField">
-                                                <rect key="frame" x="0.0" y="453.5" width="414" height="120"/>
+                                                <rect key="frame" x="0.0" y="528.5" width="414" height="120"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="120" id="2Zt-oK-5Nq"/>
                                                 </constraints>
@@ -36,7 +36,7 @@
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UFi-SY-rvZ">
-                                                <rect key="frame" x="0.0" y="573.5" width="414" height="322.5"/>
+                                                <rect key="frame" x="0.0" y="648.5" width="414" height="247.5"/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="40"/>
                                                 <state key="normal" title="Predict "/>
                                                 <connections>
@@ -50,7 +50,7 @@
                                         </constraints>
                                     </stackView>
                                 </subviews>
-                                <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.30064812299999999" green="0.62460821870000005" blue="0.92552572489999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstItem="fMk-2t-ZI0" firstAttribute="top" secondItem="agi-cg-HU5" secondAttribute="top" id="3gn-5u-C8V"/>
                                     <constraint firstAttribute="trailing" secondItem="fMk-2t-ZI0" secondAttribute="trailing" id="ICh-Xp-KmA"/>
